@@ -1,45 +1,30 @@
 #include<stdio.h>
-int main(){
-
-int arr[50],i,j,n,temp;
-printf("enter the size of array\n");
-scanf("%d",&n);
-printf("Enter the element of the arrya\n");
-for(i=0;i<n;i++){
-    scanf("%d",&arr[i]);
+int main()
+{
+	int a[10],i,j,n,temp;
+	printf("enter the number of element of given array :");
+	scanf("%d",&n);
+	printf("enter the element :\n");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			if(a[i]>a[j])
+			{
+			temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
+		    }
+		}
+	}
+	printf("\n sorted array :\n");
+	for(i=0;i<n;i++)
+	{
+		printf(" %d ",a[i]);
+	}
+	return 0;
 }
-for(i=0;i<n;i++){
-
-
-for(j=0;j<n-i-1;j++){
-    if(arr[i]>arr[i+1]){
-   temp=arr[i];
-   arr[i]=arr[i+1];
-   arr[i+1]=temp;
-
-    }
-
-}
-}
- printf("The  sorted array is");
- for(i=0;i<n;i++){
-    scanf("%d",&arr[i]);
-
- }
-
-
-
- return 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
