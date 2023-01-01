@@ -89,13 +89,9 @@ int main()
         printf("This is BST\n");
     }
     struct node*n=search(m1,6);
-    // if(n!=NULL)
-    // {
-    //     printf("%d \n",n->data);
-    // }
-    if(search(m1,20))
+     if(n!=NULL)
     {
-        printf("Element found");
+         printf("%d \n",n->data);
     }
     else
     {
