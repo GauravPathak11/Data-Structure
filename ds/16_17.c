@@ -1,9 +1,7 @@
 #include<stdio.h>
-
 int main(){
     int n,m;
     scanf("%d %d",&n,&m);
-
     int a[n][m];
     int b[n][m];
     int c[n][m];
@@ -12,7 +10,6 @@ int main(){
         for (int j=0;j<m;j++){
             scanf("%d",&a[i][j]);
         }
-
     }
     printf("enter b elements");
     for (int i=0;i<n;i++){
