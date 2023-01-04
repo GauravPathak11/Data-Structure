@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main(){
     int m;
     int n;
@@ -14,7 +13,6 @@ printf("enter the elements");
     }
     int p,q;
     printf("enter the order of b");
-
     scanf("%d %d",&p,&q);
     int b[p][q];
     printf("enter the elements of b");
