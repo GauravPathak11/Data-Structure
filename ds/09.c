@@ -1,10 +1,8 @@
 #include<stdio.h>
-
 int main(){
     int arr1[]={4,5,6};
     int arr2[]={2,3,7,8,9,10};
-    int i=0,j=0;
-    
+    int i=0,j=0;    
     int n1=sizeof(arr1)/4;
     int n2=sizeof(arr2)/4;
     int c[n1+n2];
@@ -24,7 +22,6 @@ int main(){
             j++;
             i++;
         }
-
     }
     while(i<n1){
         c[k++]=arr1[i];
@@ -35,11 +32,7 @@ int main(){
         j++;
     }
     for (int i=0;i<k;i++){
-        printf("%d",c[i]);
-        
+        printf("%d",c[i]);   
     }
-    
-    
-
     return 0;
 }
