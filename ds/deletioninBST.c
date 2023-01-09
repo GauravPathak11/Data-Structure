@@ -171,11 +171,7 @@ int main()
     // if(p!=NULL)
     // {
     //     printf("Element is found");
-    // }
-    // else
-    // {
-    //     printf("element is not present");
-    // }
+    /
     // printf("\n"); 
    
     inorder(m1);
