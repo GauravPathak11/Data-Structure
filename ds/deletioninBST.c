@@ -183,8 +183,7 @@ int main()
     // printf("\n");
     // preorder(m1);
     // printf("\n");
-    // postorder(m1);
-    // printf("\n");
+    
     inorder(m1);
     printf("\n");
     deletion(m1, 5);
