@@ -154,26 +154,7 @@ int main()
     m1->r=m3;
     m2->l=m4;
     m2->r=m5;
-    // preorder(m1);
-    // printf("\n");
-    // postorder(m1);
-    // printf("\n");
-    // inorder(m1);
-    // printf("\n");
-    // // printf("%d ",isBST(m1));
-    // // printf("\n");
-    // if(isBST(m1))
-    // printf("True");
-    // else
-    // printf("False");
-    // printf("\n");
-    // struct node*p=search(m1,8);
-    // if(p!=NULL)
-    // {
-    //     printf("Element is found");
-    /
-    // printf("\n"); 
-   
+    
     inorder(m1);
     printf("\n");
     deletion(m1, 5);
