@@ -185,8 +185,6 @@ int main()
     // printf("\n");
     // postorder(m1);
     // printf("\n");
-    // inorder(m1);
-    // printf("\n");
     inorder(m1);
     printf("\n");
     deletion(m1, 5);
