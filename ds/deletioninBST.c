@@ -177,13 +177,7 @@ int main()
     //     printf("element is not present");
     // }
     // printf("\n"); 
-    // insertion(m1,20);
-    // printf("%d",m1->r->r->data);
-    // printf("After insertion tree is :\n");   
-    // printf("\n");
-    // preorder(m1);
-    // printf("\n");
-    
+   
     inorder(m1);
     printf("\n");
     deletion(m1, 5);
