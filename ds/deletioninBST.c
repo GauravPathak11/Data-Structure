@@ -163,20 +163,7 @@ int main()
     // // printf("%d ",isBST(m1));
     // // printf("\n");
     // if(isBST(m1))
-    // printf("True");
-    // else
-    // printf("False");
-    // printf("\n");
-    // struct node*p=search(m1,8);
-    // if(p!=NULL)
-    // {
-    //     printf("Element is found");
-    // }
-    // else
-    // {
-    //     printf("element is not present");
-    // }
-    // printf("\n"); 
+    
    
     inorder(m1);
     printf("\n");
