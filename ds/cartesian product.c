@@ -1,12 +1,10 @@
 #include <stdio.h>
-
 void findCartisn(int arr1[], int arr2[], int n, int n1)
 {
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < n1; j++)
 			printf("{%d, %d}, ", arr1[i], arr2[j]);
 }
-
 int main()
 {
 	int arr1[] = { 1, 2, 3 }; // first set
