@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main(){
     int n;
     printf("enter the no of element");
@@ -9,7 +8,6 @@ int main(){
     for (int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-
     int pos;
     int val;
     printf("enter the position idx");
@@ -18,7 +16,6 @@ int main(){
     scanf("%d",&val);
     for(int i=n-1;i>=pos;i--){
         arr[i+1]=arr[i];
-
     }
     arr[pos]=val;
     for (int i=0;i<n+1;i++){
