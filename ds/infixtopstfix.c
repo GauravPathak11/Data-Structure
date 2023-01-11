@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
- 
 struct stack
 {
     int size;
     int top;
     char *arr;
 };
- 
 int stackTop(struct stack* sp){
     return sp->arr[sp->top];
 }
- 
 int isEmpty(struct stack *ptr)
 {
     if (ptr->top == -1)
@@ -23,8 +20,7 @@ int isEmpty(struct stack *ptr)
     {
         return 0;
     }
-}
- 
+} 
 int isFull(struct stack *ptr)
 {
     if (ptr->top == ptr->size - 1)
@@ -36,7 +32,6 @@ int isFull(struct stack *ptr)
         return 0;
     }
 }
- 
 void push(struct stack* ptr, char val){
     if(isFull(ptr)){
         printf("Stack Overflow! Cannot push %d to the stack\n", val);
@@ -46,7 +41,6 @@ void push(struct stack* ptr, char val){
         ptr->arr[ptr->top] = val;
     }
 }
- 
 char pop(struct stack* ptr){
     if(isEmpty(ptr)){
         printf("Stack Underflow! Cannot pop from the stack\n");
@@ -65,8 +59,7 @@ int precedence(char ch){
         return 2; 
     else
         return 0;
-}
- 
+} 
 int isOperator(char ch){
     if(ch=='+' || ch=='-' ||ch=='*' || ch=='/') 
         return 1;
@@ -81,7 +74,6 @@ char* infixToPostfix(char* infix){
     char * postfix = (char *) malloc((strlen(infix)+1) * sizeof(char));
     int i=0; // Track infix traversal
     int j = 0; // Track postfix addition 
-    
     while (infix[i]!='\0')
     {
         if(!isOperator(infix[i])){
