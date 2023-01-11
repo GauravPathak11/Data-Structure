@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-
 void printPowerSet(char *set, int set_size)
 {
     unsigned int pow_set_size = pow(2, set_size);
@@ -16,7 +15,6 @@ void printPowerSet(char *set, int set_size)
        printf("\n");
     }
 }
-
 int main()
 {
     char set[] = {'a','b','c'};
