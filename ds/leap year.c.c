@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-int year,t1;
+int year;
 printf("Enter the year");
 scanf("%d",&year);
 if(year%4==0 && year%100!=0 || year%400==0)
