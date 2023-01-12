@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main(){
     int n;
     int key;
@@ -21,9 +20,7 @@ int main(){
     }
     for (int i=n-1;i>=pos;i--){
         arr[i+1]=arr[i];
-
-    }
-    
+    } 
     arr[pos]=key;
     for (int i=0;i<n+1;i++){
         printf("%d ",arr[i]);
