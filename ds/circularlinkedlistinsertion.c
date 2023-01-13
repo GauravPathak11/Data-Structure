@@ -4,6 +4,7 @@ struct node{
 	int data;
 	struct node*next;
 };
+
 void linkedlisttraversal(struct node*head)
 {
 		struct node*p=head;
@@ -15,7 +16,7 @@ void linkedlisttraversal(struct node*head)
 	while(p!=head);
 }
 //Case 1: insert at the first;
-/*struct node*insertatfirst(struct node*head,int data)
+struct node*insertatfirst(struct node*head,int data)
 {
 	struct node*ptr=(struct node*)malloc(sizeof(struct node));
 	ptr->data=data;
@@ -28,9 +29,9 @@ void linkedlisttraversal(struct node*head)
 	ptr->next=head;
 	head=ptr;
 	return head;
-}*/
+}
 //Case 2: insert at middle;
-/*struct node*insertatindex(struct node*head,int data,int index)
+struct node*insertatindex(struct node*head,int data,int index)
 {
 	struct node*ptr=(struct node*)malloc(sizeof(struct node));
 	struct node*p=head;
@@ -44,9 +45,9 @@ void linkedlisttraversal(struct node*head)
 	ptr->next=p->next;
 	p->next=ptr;
 	return head;	
-}*/
+}
 //Case 3:insert at end;
-/*struct node*insertatend(struct node*head,int data)
+struct node*insertatend(struct node*head,int data)
 {
 	struct node*ptr=(struct node*)malloc(sizeof(struct node));
 	ptr->data=data;
@@ -59,7 +60,7 @@ void linkedlisttraversal(struct node*head)
 	ptr->next=head;
 	ptr=head;
 	return head;
-}*/
+}
 // Case 3 insertion after the node;
 struct node*insertafternode(struct node*head,struct node*p,int data)
 {
@@ -94,9 +95,9 @@ struct node*insertafternode(struct node*head,struct node*p,int data)
 		fifth->next=head;
 	printf("circular linkedlist before :\n");
 	linkedlisttraversal(head);
-//	head=insertatfirst(head,6);
-//	head=insertatindex(head,6,2);
-//	head=insertatend(head,6);
+	head=insertatfirst(head,6);
+	head=insertatindex(head,6,2);
+	head=insertatend(head,6);
 	head=insertafternode(head,fifth,6);
 	printf("circular linkedlist after the insertion :\n");
 	linkedlisttraversal(head);
