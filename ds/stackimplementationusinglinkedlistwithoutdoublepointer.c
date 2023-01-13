@@ -4,6 +4,7 @@ struct node{
 	int data;
 	struct node*next;
 };
+
 struct node*top=NULL;
 void linkedlisttraversal(struct node*ptr)
 {
@@ -13,6 +14,7 @@ void linkedlisttraversal(struct node*ptr)
 		ptr=ptr->next;
 	}
 }
+
 int isEmpty(struct node*top)
 {
 	if(top==NULL)
@@ -29,6 +31,7 @@ int isFull(struct node*top)
 	else
 	return 0;
 }
+
 struct node*push(struct node*top,int val)
 {
 	if(isFull(top))
@@ -44,6 +47,7 @@ struct node*push(struct node*top,int val)
 		return top;
 	}
 }
+
  int pop(struct node*p)
 {
 	if(isEmpty(p))
@@ -60,6 +64,7 @@ struct node*push(struct node*top,int val)
 			
 	}
 }
+
 int peek(int pos)
 { 
 	struct node*ptr = top;
@@ -73,10 +78,12 @@ int peek(int pos)
 		return ptr->data;
 	}
 }
+
 int stackTop()
 {
 	return top->data;
 }
+
 stackBottom()
 {
 	struct node*ptr = top;
@@ -86,6 +93,7 @@ stackBottom()
 	 }
 	return ptr -> data; 
 }
+
 int main()
 {
 	
