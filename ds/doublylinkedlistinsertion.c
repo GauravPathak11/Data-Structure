@@ -5,6 +5,7 @@ struct node{
 	struct node*prev;
 	struct node*next;
 };
+
 void doublylinkedlist(struct node*head)
 {
 	struct node*ptr=head;
@@ -14,6 +15,7 @@ void doublylinkedlist(struct node*head)
 		ptr=ptr->next;
 	}	
 }
+
 int main()
 {
 	struct node*head;
@@ -26,6 +28,7 @@ int main()
 	third=(struct node*)malloc(sizeof(struct node));
 	fourth=(struct node*)malloc(sizeof(struct node));
 	fifth=(struct node*)malloc(sizeof(struct node));
+	
 	head->data=10;
 	head->next=second;
 	head->prev=NULL;
@@ -41,6 +44,7 @@ int main()
 	fifth->data=50;
 	fifth->next=NULL;
 	fifth->prev=fourth;
+	
 	doublylinkedlist(head);
 	return 0;
 }
