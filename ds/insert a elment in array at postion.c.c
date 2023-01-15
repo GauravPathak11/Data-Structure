@@ -10,7 +10,7 @@ int main(){
     }
     int pos;
     int val;
-    printf("enter the position idx");
+    printf("enter the position index");
     scanf("%d",&pos);
     printf("enter the value");
     scanf("%d",&val);
@@ -21,5 +21,6 @@ int main(){
     for (int i=0;i<n+1;i++){
         printf("%d",arr[i]);
     }
+    
     return 0;
 }
