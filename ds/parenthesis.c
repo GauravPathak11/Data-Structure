@@ -71,7 +71,6 @@ int parenthesis(char*exp)
             }
             pop(s);
         }
-       
     }
     if(isEmpty(s))
     {
