@@ -10,8 +10,8 @@ void main()
     printf (" \n Enter a string to reverse order: ");  
     scanf( "%s", &str);  
     len = strlen(str); 
-    left = 0; // set left index at 0  
-    right = len - 1; // set right index len - 1  
+    left = 0; 
+    right = len - 1;
     // use for loop to store the reverse string  
     for (i = left; i <right; i++)  
     {  
