@@ -3,13 +3,13 @@
 #include <string.h>  
 void main()  
 {  
-    char str[50], temp; // define the size of str[] array  
+    char str[50], temp; 
     int i, left, right, len;  
     printf (" \n Display a reverse string in the C: \n");  
     printf (" ----------------------- ");  
     printf (" \n Enter a string to reverse order: ");  
     scanf( "%s", &str);  
-    len = strlen(str); // get the length of the string  
+    len = strlen(str); 
     left = 0; // set left index at 0  
     right = len - 1; // set right index len - 1  
     // use for loop to store the reverse string  
