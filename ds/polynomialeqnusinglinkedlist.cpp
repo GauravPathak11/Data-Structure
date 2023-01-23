@@ -1,16 +1,13 @@
 #include <iostream>
 #include <iomanip.h>
 using namespace std;
-
 struct poly {
     int coeff;
     int pow_val;
     poly* next;
 };
-
 class add {
     poly *poly1, *poly2, *poly3;
-
 public:
     add() { poly1 = poly2 = poly3 = NULL; }
     void addpoly();
