@@ -9,27 +9,21 @@ int count(int *);
 int main() {
   int arr[MAX];
   int front, rear, i, n;
-
   front = rear = -1;
   for (i = 0; i < MAX; i++)
     arr[i] = 0;
-
   addRear(arr, 5, &front, &rear);
   addFront(arr, 12, &front, &rear);
   addRear(arr, 11, &front, &rear);
   addFront(arr, 5, &front, &rear);
   addRear(arr, 6, &front, &rear);
   addFront(arr, 8, &front, &rear);
-
   printf("\nElements in a deque: ");
   display(arr);
-
   i = delFront(arr, &front, &rear);
   printf("\nremoved item: %d", i);
-
   printf("\nElements in a deque after deletion: ");
   display(arr);
-
   addRear(arr, 16, &front, &rear);
   addRear(arr, 7, &front, &rear);
 
