@@ -1,16 +1,11 @@
-// Deque implementation in C
-
 #include <stdio.h>
-
 #define MAX 10
-
 void addFront(int *, int, int *, int *);
 void addRear(int *, int, int *, int *);
 int delFront(int *, int *, int *);
 int delRear(int *, int *, int *);
 void display(int *);
 int count(int *);
-
 int main() {
   int arr[MAX];
   int front, rear, i, n;
